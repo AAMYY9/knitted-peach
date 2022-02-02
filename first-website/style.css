@@ -1,0 +1,31 @@
+body{
+  background-color:FloralWhite;
+  margin:0px;
+}
+
+p{
+  color:Cornsilk;
+  background:#a1c7ab;
+  border:12px dashed bisque;
+  padding:40px;
+  padding-left:20px;
+  margin:25px;
+}
+
+h1 {
+  color:DarkSeaGreen;
+  font-size:70px;
+  margin-top:0;
+}
+img {
+  max-width: 100%;
+  width:1000px;
+}
+
+.special {
+  background:DarkKhaki;
+  font-size:20px;
+}
+.small-image {
+  width: 90px;
+}
