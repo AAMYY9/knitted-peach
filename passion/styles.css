@@ -1,0 +1,71 @@
+，*{
+ box-sizing: border-box;
+}
+body{
+  background:#000000;
+  margin:40px;
+  }
+   /* background-image: url("blacknoise.png");
+   margin-top:0
+   background-position: center;
+    background-size: cover; */
+
+    .Wetland{
+      font-family: 'IBM Plex Mono',fantasy;
+      position: fixed;
+      left:5%;
+      top: 30px;
+      margin:auto;
+      font-size: 40px;
+      color:white;
+    }
+
+.bird{
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:2px;
+  max-width:100%
+  color:white;
+  margin:auto;
+  z-index:-10;
+}
+.center1{
+  position: static;
+  margin:30px 20px 400px 400px;
+  z-index:3;
+  }
+
+  .center2{
+    position: fixed;
+    margin:90px 900px 300px 300px;
+    z-index:5;
+    }
+    .center3{
+      position: static;
+      margin:800px 10px 300px 200px;
+        z-index:4;
+      }
+      .center3{
+        position: static;
+        margin:600px 500px 100px 800px;
+          z-index:5;
+        }
+  /* .center4{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:10; */
+}
+/* ·code{
+  font-family: 'IBM Plex Mono',cursive;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:2px;
+  max-width:100%
+  color:white; */
+  margin:auto;
+}

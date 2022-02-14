@@ -1,0 +1,19 @@
+*{
+ box-sizing: border-box;
+}
+
+body{
+  font-family: 'Arvo', serif;
+  font-style:italic;
+  font-size:30px;
+}
+P{  max-width:300px;
+  height:400px;
+}
+.pear{
+  background-color:#a1c7ab;
+  padding:30px 30px 5px 30px;
+  border:10px solid thistle;
+  margin:30px 30px;
+
+}
