@@ -1,0 +1,118 @@
+，*{
+ box-sizing: border-box;
+}
+body{
+  background:#000000;
+  margin:40px;
+  cursor: grab;
+  }
+   /* background-image: url("blacknoise.png");
+   margin-top:0
+   background-position: center;
+    background-size: cover; */
+
+    .Wetland{
+      font-family:'IBM Plex Mono', monospa;
+      position: fixed;
+      left:8%;
+      top: 30px;
+      margin:auto;
+      font-size: 30px;
+      color:white;
+      cursor:se-resize;
+    }
+    .poem{
+      font-family: 'Rokkitt', serif;
+      position:fixed;
+      right:8%;
+      bottom:8%;
+      line-height:3;
+      font-size: 0.5px;
+      align-content:center;
+      color:white;
+
+    }
+    .hover{
+      display:block;
+    }
+
+    .hide{
+      display: none;
+      max-width: 100%;
+      top:0%;
+      position:fixed;
+    }
+
+  .hover:hover + .hide{
+   display: inline;
+  }
+
+
+.fragments{
+  position:fixed;
+  right:100px;
+  bottom:100px;
+  max-width:200px;
+}
+
+
+.bird-text{
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:2px;
+  max-width:100%
+  color:white;
+  margin:auto;
+  z-index:-10;
+}
+.center1{
+  position:absolute;
+  bottom:40vh;
+  animation:zoom 10s infinite linear;
+  /* margin:30px 20px 400px 400px; */
+  z-index:3;
+  cursor:help;
+  }
+
+  .center2{
+    position:absolute;
+    top:10vh;
+    z-index:5;
+    animation:zoom 13s infinite linear;
+    cursor:help;
+    }
+
+  .center3{
+   position:absolute;
+   top:20vh;
+   z-index:6;
+   animation:zoom 10s infinite linear;
+   cursor:help;
+   }
+
+  .center4{
+  position:fixed;
+  top:53%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  cursor: grabbing;
+}
+  .center5{
+  top:90vh;
+  z-index:4;
+  animation:zoom 20s infinite linear;
+  cursor:help;
+  cursor:help;
+}
+
+@keyframes zoom{
+ 0%{
+ transform: translateX(110vw);
+ }
+
+100%{
+transform: translateX(-10vw);
+ }

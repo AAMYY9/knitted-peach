@@ -1,3 +1,58 @@
+@font-face {
+    font-family: 'sergeregular';
+    src: url('serge-regular-webfont.woff2') format('woff2'),
+         url('serge-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img{
+  width:100px;
+}
+
 body{
-  background-color:lightblue;
+  background-color:rgb(17, 18, 17);
+  font-family:'sergeregular',serif;
+}
+
+.top-text{
+ font-family: 'Source Code Pro', monospace;
+  position:absolute;
+  top:50%;
+  left:50%;
+  color:white;
+  transform:translate(-50%,-50%);
+}
+
+.top-text:hover{
+ opacity:0;
+ cursor:help;
+}
+
+.top-text:hover + .hide{
+  opacity:1;
+}
+
+.hide{
+  position:absolute;
+  top:45%;
+  left:50%;
+  opacity:0;
+  transform:translate(-50%,-50%);
+  transition:opacity .5s
+}
+
+
+.list-of-webs{
+  font-family: 'Source Code Pro', monospace;
+   position:absolute;
+   font-size:5px;
+   top:10%;
+   right:10%;
+   cursor:help;
+}
+
+a:visited {
+  color: rgb(207, 207, 207);
 }

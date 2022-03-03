@@ -1,0 +1,103 @@
+*{
+ box-sizing: border-box;
+}
+body{
+  margin:0;
+  margin-top: 15vh;
+  background-color:rgb(17, 16, 17);
+
+}
+
+.container{
+  background-color: rgb(27, 27, 27);
+  position:relative;
+  width:90vw;
+  height:960x;
+  overflow:scroll;
+  margin:auto;
+}
+
+#scrollable{
+  width:2000px;
+  height:600px;
+  background-image: url(desert.jpg);
+  background-position: bottom;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.land{
+  position:relative;
+  z-index:0;
+}
+
+.weed-container {
+  animation: move 15s infinite ease;
+  height:100%;
+  position: relative;
+}
+
+.weed-container2 {
+  animation: flow 10s infinite ease;
+  height:100%;
+  position: absolute;
+  width: 100%;
+    top: 0;
+  left: 0;
+}
+
+.weed1{
+  position:absolute;
+  z-index:1;
+  width:40vh;
+  height:auto;
+  bottom:50px;
+  left:200px;
+  animation: spin 2s infinite linear;
+}
+
+.weed2{
+  position:absolute;
+  width:40vh;
+  height:auto;
+  z-index:2;
+  bottom:60px;
+  left:0px;
+  animation: spin 2.5s infinite linear;
+}
+
+@keyframes spin{
+  0%{
+  transform:rotate(0deg);
+  /* translateX(10%) ; */
+  /* deg 是度 */
+  }
+
+  100%{
+    transform:rotate(360deg);
+    /* translateX(110%); */
+  }
+ }
+
+ @keyframes move{
+   0%{
+   transform:translate(-70vw);
+   /* deg 是度 */
+   }
+
+   100%{
+     transform:translateX(110%);
+   }
+  }
+
+  @keyframes flow{
+    0%{
+    transform:translateX(-50vw);
+    /* deg 是度 */
+    }
+
+    100%{
+      transform:translateX(100%);
+    }
+   }
