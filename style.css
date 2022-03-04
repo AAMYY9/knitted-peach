@@ -40,14 +40,16 @@ body{
   left:50%;
   opacity:0;
   transform:translate(-50%,-50%);
-  transition:opacity .5s
+  transition:opacity .5s;
+  z-index: -1;
+  /* pointer-events:none; */
 }
 
 
 .list-of-webs{
   font-family: 'Source Code Pro', monospace;
    position:absolute;
-   font-size:5px;
+   font-size:8px;
    top:10%;
    right:10%;
    cursor:help;

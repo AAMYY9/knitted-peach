@@ -22,12 +22,12 @@ body{
       cursor:se-resize;
     }
     .poem{
-      font-family:'IBM Plex Mono', monospa;
+      font-family: 'Rokkitt', serif;
       position:fixed;
-      right:10vh;
-      bottom:10vh;
-      line-height:2;
-      font-size: 8px;
+      right:8%;
+      bottom:8%;
+      line-height:3;
+      font-size: 0.5px;
       align-content:center;
       color:white;
 
@@ -36,25 +36,11 @@ body{
       display:block;
     }
 
-    .hover1{
-      display:block;
-    }
-
     .hide{
       display: none;
       max-width: 100%;
+      top:0%;
       position:fixed;
-    }
-
-    .hidden{
-      display: none;
-      max-width:100%;
-      position:fixed;
-      top:0;
-    }
-
-    .hover1:hover + .hidden{
-     display: inline;
     }
 
   .hover:hover + .hide{
@@ -75,7 +61,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size:1px;
+  font-size:2px;
   max-width:100%
   color:white;
   margin:auto;
@@ -83,11 +69,11 @@ body{
 }
 .center1{
   position:absolute;
-  bottom:20vh;
+  bottom:10vh;
   animation:zoom 10s infinite linear;
   /* margin:30px 20px 400px 400px; */
   z-index:3;
-  cursor: grabbing;
+  cursor:help;
   }
 
   .center2{
@@ -95,7 +81,7 @@ body{
     top:10vh;
     z-index:5;
     animation:zoom 13s infinite linear;
-    cursor: grabbing;
+    cursor:help;
     }
 
   .center3{
@@ -103,71 +89,28 @@ body{
    top:20vh;
    z-index:6;
    animation:zoom 10s infinite linear;
-   cursor: grabbing;
+   cursor:help;
    }
 
- .center4{
+  .center4{
   position:fixed;
   top:53%;
   left:50%;
   transform: translate(-50%, -50%);
   z-index:10;
   cursor: grabbing;
-  }
+}
 
- .center4:hover {
+.center4:hover {
   opacity:0;
- }
-
-.center5{
-  position:absolute;
-  top:75vh;
-  z-index:4;
-  animation:zoom 18s infinite ease;
-  cursor: grabbing;
 }
-
-.center6{
-  position:absolute;
-  bottom:20vh;
-  z-index:2;
+  .center5{
+  top:90vh;
+  z-index:4;
   animation:zoom 20s infinite linear;
-  cursor: grabbing;
+  cursor:help;
+  cursor:help;
 }
-
-.center7{
-  position:absolute;
-  bottom:15vh;
-  z-index:2;
-  animation:zoom 17s infinite linear;
-  cursor: grabbing;
-}
-
-.center8{
-  position:absolute;
-  top:50vh;
-  z-index:4;
-  animation:zoom 14s infinite linear;
-  cursor: grabbing;
-}
-
-.center9{
-  position:absolute;
-  top:18vh;
-  z-index:4;
-  animation:zoom 15s infinite linear;
-  cursor: grabbing;
-}
-
-.center10{
-  position:absolute;
-  top:45vh;
-  z-index:4;
-  animation:zoom 16s infinite ease;
-  cursor: grabbing;
-}
-
-
 
 @keyframes zoom{
  0%{
