@@ -69,6 +69,12 @@ body{
   max-width:200px;
 }
 
+#rain-switch{
+  position:fixed;
+  top:0;
+  right:100px;
+  max-height:200px;
+}
 
 .bird-text{
   position:fixed;
@@ -164,6 +170,14 @@ body{
   top:45vh;
   z-index:4;
   animation:zoom 16s infinite ease;
+  cursor: grabbing;
+}
+
+.center11{
+  position:absolute;
+  top:60vh;
+  z-index:4;
+  animation:zoom 15s infinite linear;
   cursor: grabbing;
 }
 

@@ -117,6 +117,15 @@ body {
  margins:5px;
 }
 
+a:link {
+  color: black;
+    text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
 
 .fix-me{
   font-family: 'Space Mono', monospace;
@@ -147,10 +156,10 @@ body {
 .dotdotdot{
   font-family: 'Space Mono', monospace;
   color:white;
-  font-size:250px;
-  top:60vh;
-  left:50vh;
-  position:relative;
+  font-size:120px;
+  top:20vh;
+  left:10vh;
+  position:fixed;
   z-index:10;
 }
 
@@ -162,7 +171,7 @@ body {
 }
 
 .dotdotdot span:nth-of-type(1) {
-  left:-50px;
+  left:-25px;
 }
 
 .dotdotdot span:nth-of-type(2) {
@@ -170,7 +179,7 @@ body {
 }
 
 .dotdotdot span:nth-of-type(3) {
-  left:50px;
+  left:25px;
   animation-delay: 1s;
 }
 

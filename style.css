@@ -34,6 +34,25 @@ body{
   opacity:1;
 }
 
+.big-star{
+  position:fixed;
+  bottom: 0;
+  right:0;
+  width:300px;
+}
+
+.falling1{
+  position:absolute;
+  left:80px;
+  max-width:80px;
+}
+
+.falling2{
+  position:absolute;
+  left:0;
+  max-width:80px;
+}
+
 .hide{
   position:absolute;
   top:45%;
