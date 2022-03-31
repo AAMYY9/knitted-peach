@@ -1,0 +1,169 @@
+*{
+ box-sizing: border-box;
+}
+body{
+  margin:0;
+  /* margin-top: 15vh; */
+  background-color:black;
+
+}
+
+canvas {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+#get-text {
+  position: absolute;
+  top: 50px;
+  left: 15vw;
+  z-index: 11;
+  width: 300px;
+  color:rgb(236, 236, 236);
+  font-family: 'Space Mono', monospace;
+}
+
+#user-text{
+  color:white;
+  font-family: 'Space Mono', monospace;
+  background: none;
+  border:none;
+  border-bottom: 1px solid white;
+  border-style: solid;
+}
+
+.container{
+  background-color: black;
+  position:relative;
+  display: block;
+  /* margin-top: auto;
+  margin-bottom: auto;
+  height:50%; */
+  overflow:scroll;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+
+}
+
+#scrollable{
+  width:2407px;
+  min-width:100vw;
+  height:1024px;
+  height: 100vh;
+  background-position: bottom;
+  position:relative;
+  overflow:hidden;
+  background-size:cover;
+}
+
+.day {
+  background-color: #ccc;
+  background-image: url(desert1.png);
+}
+
+.night {
+  background-color: #333;
+  background-image: url(night-blackwhite.jpg);
+}
+
+
+.land{
+  position:relative;
+  z-index:0;
+}
+
+.weed-container {
+  animation: move 15s infinite ease;
+  height:100%;
+  position: relative;
+}
+
+.weed-container2 {
+  animation: flow 20s infinite ease;
+  height:100%;
+  position: absolute;
+  width: 100%;
+    top: 0;
+  left: 0;
+}
+
+.weed-container3 {
+  animation: flow 10s infinite ease;
+  height:100%;
+  position: absolute;
+  width: 100%;
+    top: 0;
+  left: 0;
+}
+
+.weed1{
+  position:absolute;
+  z-index:1;
+  width:40vh;
+  height:auto;
+  bottom:50px;
+  left:200px;
+  animation: spin 2s infinite linear;
+}
+
+.weed2{
+  position:absolute;
+  width:40vh;
+  height:auto;
+  z-index:2;
+  bottom:60px;
+  left:0px;
+  animation: spin 2.5s infinite linear;
+}
+
+.weed3{
+  position:absolute;
+  width:35vh;
+  height:auto;
+  z-index:1;
+  bottom:40px;
+  left:0px;
+  animation: spin 2s infinite linear ;
+}
+.falling-letters{
+  position:relative;
+  z-index:10;
+  top:0;
+}
+
+@keyframes spin{
+  0%{
+  transform:rotate(0deg);
+  /* translateX(10%) ; */
+  /* deg 是度 */
+  }
+
+  100%{
+    transform:rotate(360deg);
+    /* translateX(110%); */
+  }
+ }
+
+ @keyframes move{
+   0%{
+   transform:translate(-70vw);
+   /* deg 是度 */
+   }
+
+   100%{
+     transform:translateX(110%);
+   }
+  }
+
+  @keyframes flow{
+    0%{
+    transform:translateX(-50vw);
+    /* deg 是度 */
+    }
+
+    100%{
+      transform:translateX(100%);
+    }
+   }

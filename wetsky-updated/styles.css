@@ -1,0 +1,201 @@
+，*{
+ box-sizing: border-box;
+}
+body{
+  background:#000000;
+  margin:40px;
+  cursor: grab;
+  }
+   /* background-image: url("blacknoise.png");
+   margin-top:0
+   background-position: center;
+    background-size: cover; */
+
+    .Wetland{
+      font-family:'IBM Plex Mono', monospa;
+      position: fixed;
+      left:8%;
+      top: 30px;
+      margin:auto;
+      font-size: 30px;
+      color:white;
+      cursor:se-resize;
+    }
+    .poem{
+      font-family:'IBM Plex Mono', monospa;
+      position:fixed;
+      right:10vh;
+      bottom:10vh;
+      line-height:2;
+      font-size: 8px;
+      align-content:center;
+      color:white;
+
+    }
+    .hover{
+      display:block;
+    }
+
+    .hover1{
+      display:block;
+    }
+
+    .hide{
+      display: none;
+      max-width: 100%;
+      position:fixed;
+    }
+
+    .hidden{
+      display: none;
+      max-width:100%;
+      position:fixed;
+      top:0;
+    }
+
+    .hover1:hover + .hidden{
+     display: inline;
+    }
+
+  .hover:hover + .hide{
+   display: inline;
+  }
+
+
+.fragments{
+  position:absolute;
+  top:0px;
+  left:0px;
+  max-width:200px;
+}
+
+#rain-switch{
+  position:fixed;
+  top:0;
+  right:100px;
+  max-height:200px;
+}
+
+.bird-text{
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:1px;
+  max-width:100%
+  color:white;
+  margin:auto;
+  z-index:-10;
+}
+.center1{
+  position:absolute;
+  bottom:20vh;
+  animation:zoom 10s infinite linear;
+  /* margin:30px 20px 400px 400px; */
+  z-index:3;
+  cursor: grabbing;
+  }
+
+  .center2{
+    position:absolute;
+    top:10vh;
+    z-index:5;
+    animation:zoom 13s infinite linear;
+    cursor: grabbing;
+    }
+
+  .center3{
+   position:absolute;
+   top:20vh;
+   z-index:6;
+   animation:zoom 10s infinite linear;
+   cursor: grabbing;
+   }
+
+ .center4{
+  position:fixed;
+  top:53%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  cursor: grabbing;
+  }
+
+ .center4:hover {
+  opacity:0;
+ }
+
+.center5{
+  position:absolute;
+  top:75vh;
+  z-index:4;
+  animation:zoom 18s infinite ease;
+  cursor: grabbing;
+}
+
+.center6{
+  position:absolute;
+  bottom:20vh;
+  z-index:2;
+  animation:zoom 20s infinite linear;
+  cursor: grabbing;
+}
+
+.center7{
+  position:absolute;
+  bottom:15vh;
+  z-index:2;
+  animation:zoom 17s infinite linear;
+  cursor: grabbing;
+}
+
+.center8{
+  position:absolute;
+  top:50vh;
+  z-index:4;
+  animation:zoom 14s infinite linear;
+  cursor: grabbing;
+}
+
+.center9{
+  position:absolute;
+  top:18vh;
+  z-index:4;
+  animation:zoom 15s infinite linear;
+  cursor: grabbing;
+}
+
+.center10{
+  position:absolute;
+  top:45vh;
+  z-index:4;
+  animation:zoom 16s infinite ease;
+  cursor: grabbing;
+}
+
+.center11{
+  position:absolute;
+  top:60vh;
+  z-index:4;
+  animation:zoom 15s infinite linear;
+  cursor: grabbing;
+}
+
+#tiresult {
+  font-size: 13px; 
+  background-color: #000000; 
+  font-weight: bold; 
+  margin:300px; 
+  padding: 10px,10px; 
+  /*--fs: 11px;  what is this? */
+
+}
+
+@keyframes zoom{
+ 0%{
+ transform: translateX(110vw);
+ }
+
+100%{
+transform: translateX(-10vw);
+ }

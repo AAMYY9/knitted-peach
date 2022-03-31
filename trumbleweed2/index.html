@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <script src="p5.js"></script>
+  <script src="p5.dom.js"></script>
+  <title>the wasteland</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Code+Pro:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <form id="get-text">
+      <label>Leave a message:</label><br>
+      <input type="text" id="user-text" name="the-text" size="80"></input>
+      <input type="button" onclick="getID();" value="Submiit"/>
+    </form>
+    <div class="container">
+      <div id="scrollable">
+        <!-- <img class="land" src="desert.jpg" alt="weed1"> -->
+        <div class="weed-container">
+          <img class="weed1" src="weed1.png" alt="weed1">
+        </div>
+
+        <div class="weed-container2">
+          <img class="weed2" src="weed1.png" alt="weed2">
+        </div>
+        
+        <div class="weed-container3">
+          <img class="weed3" src="weed3.png" alt="weed3">
+        </div>
+        <!-- <img class="weed2" src="weedtext3.png" alt="weed1"> -->
+
+      </div>
+  <div class="zoomer"></div>
+
+  <div class="falling-letters"></div>
+
+
+  <script src="functions.js"></script>
+</div>
+  </body>
+  </html>

@@ -1,0 +1,56 @@
+*{
+ box-sizing: border-box;
+ background-color: rgb(246, 251, 213);
+}
+
+button {
+  background-color:rgb(226, 238, 167);
+  border-radius: 50%;
+  height:100px;
+  width:100px;
+  border:none;
+  cursor:cell;
+}
+
+button:hover{
+  background-color:rgb(249, 198, 92);
+}
+
+.sidebar{
+  background-color:green;
+  position:fixed;
+  top:0;
+  right:-100px;
+  height:300px;
+  width:100px;
+  padding:20px;
+  transition:right .5s ease-in;
+}
+
+.active {
+  right:0;
+  /* padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px; */
+}
+
+.marquee {
+  background-color:rgb(236, 249, 232);
+  width: 100%; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  border:1px solid #ccc;
+  font-size:40px;
+}
+
+#draggable{
+  background-color:rgb(255, 215, 125);
+  width:100px;
+  height:100px;
+  border-radius: 5px;
+}
+
+.draggable{
+  background-color:rgb(255, 180, 125);
+  width:200px;
+}
