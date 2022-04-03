@@ -1,17 +1,75 @@
-*{
+；*{
  box-sizing: border-box;
- margin:0;
 }
 
-canvas {
-  width: 100%;
+@font-face {
+    font-family: 'times_dotroman';
+    src: url('timesdotrom-webfont.woff2') format('woff2'),
+         url('timesdotrom-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+  background:rgb(25, 25, 25);
+  margin:0px;
+}
+#
+ canvas {
+  width: 100vw;
   height: 100vh;
+  background: none;
+}
+
+.flexbox{
+  margin:10px;
+  position:relative;
+  display:flex;
+  top:10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vw;
+  height:auto;
+  flex-direction:column;
+  align-items: center;
+  gap:30px;
+
+}
+
+.title2{
+  font-family: 'times_dotroman';
+  font-size:28pt;
+  color:rgb(241, 246, 246);
+  position:relative;
+  align-content:center;
+  z-index:4;
+
+}
+
+.journal{
+  cursor: url(light.gif),auto;
+  font-family: 'times_dotroman';
+  font-size:12pt;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color:rgb(241, 246, 246);
+  align-content:center;
+  position:relative;
+  z-index:5;
+  padding: 30px;
+  border:0.5px solid white;
 }
 
 .bug {
-  background: green;
-  width:20px;
-  height:20px;
+  /* mix-blend-mode: soft-light; */
+  height:auto;
+  width:80px;
+  height:80px;
   position: absolute;
-  transition: top 6s ease, left 6s ease;
+  z-index:10;
+  transition: top 6s ease, left 10s ease;
+}
+
+img {
+  width: 30px;
 }
