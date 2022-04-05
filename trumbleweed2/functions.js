@@ -21,7 +21,7 @@ change_background();
 
 let words = [];
 let wordFall = setInterval(makeWord, 200);
-// let letters = ['y', 'a', 's', 's', 'q', 'u', 'e', 'e', 'n']
+let letters = ['y', 'a', 's', 's', 'q', 'u', 'e', 'e', 'n']
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
