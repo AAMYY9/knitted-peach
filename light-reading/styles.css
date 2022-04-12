@@ -8,6 +8,14 @@
          url('timesdotrom-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'cirruscumulusregular';
+    src: url('cirruscumulus-webfont.woff2') format('woff2'),
+         url('cirruscumulus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 body{
@@ -35,16 +43,16 @@ img{
   top:10px;
   margin-left: auto;
   margin-right: auto;
-  width:80vw;
+  width:70vw;
   height:auto;
   flex-direction:column;
   align-items: center;
-  gap:30px;
+  gap:10px;
 
 }
 
 .title2{
-  font-family: 'times_dotroman';
+  font-family: 'cirruscumulusregular';
   font-size:60pt;
   color:rgb(25, 25, 25);
   position:relative;
@@ -55,8 +63,8 @@ img{
 
 .journal{
   font-family: 'times_dotroman';
-  font-size:36pt;
-  line-height: 1.2;
+  font-size:18pt;
+  line-height: 1.5;
   letter-spacing: 1px;
   color:rgb(25, 25, 25);
   align-content:center;
@@ -78,8 +86,8 @@ img{
 
 .light {
   mix-blend-mode:difference;
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
   position: absolute;
   z-index:2;
   /* transition: top 6s ease, left 10s ease; */

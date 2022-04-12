@@ -2,3 +2,31 @@
  box-sizing: border-box;
  background-color: rgb(238, 238, 238);
 }
+
+body{
+  background:rgb(25, 25, 25);
+  margin:20px;
+  cursor:grab;
+}
+
+img{
+  max-width:60vw;
+  margin-bottom: 10px;
+}
+
+.box{
+top:50px;
+width:80vw;
+position:absolute;
+margin-left:10vw;
+gap:15px;
+cursor:grab;
+}
+
+.title{
+  position:relative;
+  text-align: center;
+  font-size:18pt;
+  font-family: 'Source Code Pro', monospace;
+  color:rgb(125, 125, 121);
+}
