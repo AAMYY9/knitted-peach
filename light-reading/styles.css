@@ -13,7 +13,13 @@
 body{
   background:rgb(25, 25, 25);
   margin:0px;
+  cursor:none;
 }
+
+img{
+  max-width:100%;
+}
+
 #
  canvas {
   width: 100vw;
@@ -22,13 +28,14 @@ body{
 }
 
 .flexbox{
+  cursor: none;
   margin:10px;
   position:relative;
   display:flex;
   top:10px;
   margin-left: auto;
   margin-right: auto;
-  width: 60vw;
+  width:80vw;
   height:auto;
   flex-direction:column;
   align-items: center;
@@ -38,8 +45,8 @@ body{
 
 .title2{
   font-family: 'times_dotroman';
-  font-size:28pt;
-  color:rgb(241, 246, 246);
+  font-size:60pt;
+  color:rgb(25, 25, 25);
   position:relative;
   align-content:center;
   z-index:4;
@@ -47,29 +54,33 @@ body{
 }
 
 .journal{
-  cursor: url(light.gif),auto;
   font-family: 'times_dotroman';
-  font-size:12pt;
+  font-size:36pt;
   line-height: 1.2;
   letter-spacing: 1px;
-  color:rgb(241, 246, 246);
+  color:rgb(25, 25, 25);
   align-content:center;
   position:relative;
   z-index:5;
-  padding: 30px;
-  border:0.5px solid white;
+  padding: 10px;
+  /* border:0.5px solid white; */
 }
 
 .bug {
   /* mix-blend-mode: soft-light; */
   height:auto;
-  width:80px;
-  height:80px;
+  width:30px;
   position: absolute;
   z-index:10;
-  transition: top 6s ease, left 10s ease;
+  transition: top 10s ease, left 15s ease;
+  transform: rotate(180deg);
 }
 
-img {
-  width: 30px;
+.light {
+  mix-blend-mode:difference;
+  width:200px;
+  height:200px;
+  position: absolute;
+  z-index:2;
+  /* transition: top 6s ease, left 10s ease; */
 }
