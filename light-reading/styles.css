@@ -64,7 +64,7 @@ img{
 .journal{
   font-family: 'times_dotroman';
   font-size:18pt;
-  line-height: 1.5;
+  line-height: 3;
   letter-spacing: 1px;
   color:rgb(25, 25, 25);
   align-content:center;
@@ -77,11 +77,17 @@ img{
 .bug {
   /* mix-blend-mode: soft-light; */
   height:auto;
-  width:30px;
+  width:50px;
   position: absolute;
   z-index:10;
-  transition: top 10s ease, left 15s ease;
+  transition: top 15s ease, left 20s ease;
   transform: rotate(180deg);
+}
+
+.moth {
+  top:90%;
+  left:90%;
+  transition: top 8s ease, left 12s ease;
 }
 
 .light {
