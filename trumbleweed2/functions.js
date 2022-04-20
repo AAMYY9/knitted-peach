@@ -6,7 +6,7 @@ function change_background() {
   var d = new Date();
   var n = d.getHours();
   console.log(n);
-  if (n >= 13 || n < 7) {
+  if (n >= 18 || n < 7) {
     document.getElementById('scrollable').className = "night";
   } else {
     document.getElementById('scrollable').className = "day";
