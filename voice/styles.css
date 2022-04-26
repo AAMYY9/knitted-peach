@@ -1,0 +1,26 @@
+*{
+ box-sizing: border-box;
+}
+
+.title2{
+  font-family: 'cirruscumulusregular';
+  font-size:20pt;
+  color:rgb(25, 25, 25);
+  position:relative;
+  align-content:center;
+  z-index:4;
+
+}
+
+.journal{
+  font-family: 'times_dotroman';
+  font-size:12pt;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color:rgb(25, 25, 25);
+  align-content:center;
+  position:relative;
+  z-index:5;
+  padding: 10px;
+  /* border:0.5px solid white; */
+}
