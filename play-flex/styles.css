@@ -1,4 +1,4 @@
-/* *{ */
+*{
  box-sizing: border-box;
 }
 
@@ -8,8 +8,9 @@ body {
 }
 
 .home-intro {
-  background-image: url("screen-grass.png");
+  /* background-image: url("screen-grass.png"); */
   background-color: rgb(11, 218, 0);
+  background-size: cover;
   position:absolute;
   z-index: -5;
   width:100vw;
